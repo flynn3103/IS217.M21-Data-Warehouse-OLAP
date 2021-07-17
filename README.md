@@ -78,15 +78,31 @@
 | PK |ID_ShipMode| int|Mã chế độ vận chuyển|
 |   | Ship_Mode |varchar  |Tên chế độ vận chuyển|
 
+## Nội dung 15 câu hỏi truy vấn:
+    a) Cho biết tổng doanh số bán hàng ở nước Germany theo từng năm.
+    b) Cho biết thông tin khách hàng (tên khách hàng, loại khách hàng) đạt tổng số tiền mua cao
+    nhất trong quý 2 năm 2012.
+    c) Cho biết tên khách hàng có tổng số lượng sản phẩm đã mua trên 5 tại bang Texas.
+    d) Đưa ra phần trăm về phí vận chuyển của từng từng thị trường (Market) trong năm 2013.
+    e) Theo từng tháng, quý, năm liệt kê loại hình vận chuyển cùng với phí vận chuyển của loại
+    hình đó (nếu có).
+    f) Cho biết tên sản phẩm, loại sản phẩm và tổng số lượng sản phẩm đó lớn hơn 10 được đặt
+    theo từng quốc gia.
+    g) Với từng thành phố liệt kê số lượng chi tiết đơn hàng bán ra theo từng năm, trừ thành phố
+    Zurich và Zhuhai.
+    h) Đưa ra TOP 3 sản phẩm có lợi nhuận nhiều nhất trong năm 2013.
+    i) Thống kê lợi nhuận, doanh thu, và phần trăm lợi nhuận từng loại sản phẩm, sắp xếp theo
+    thứ tự phần trăm lợi nhuận giảm dần.
+    j) Cho biết khách hàng có số lần mua hàng cao nhất và khách hàng có số lần mua hàng thấp
+    nhất.
+    k) Liệt kê những sản phẩm (ID) có doanh thu từ $1000 đến $10000.
+    l) Đưa ra doanh thu, lợi nhuận, số lượng sản phẩm bán ra của từng tiểu mục sản phẩm (SubCategory).
+    m) Với mỗi quốc gia đưa ra 3 thành phố có lợi nhuận cao nhất.
+    n) Đưa ra 3 sản phẩm có số lượng mua hàng ít nhất tại New Zealand.
+    o) Liệt kê những sản phẩm thuộc top 5 soanh thu cao nhất hoặc top 3 số lượng bán cao nhất.
 
-## Tích hợp dữ liệu (SSIS):
-
-## Phân tích dữ liệu:
-
-### 1. Phân tích SSAS trên các CUBE:
-### 2. Phân tích trên Pivot Table:
-
-### Phân tích trên MDX:
+## Quy trình tích hợp và phân tích:
+![](image/Power_BI_Ecosystem.png)
 
 ## Trực quan hóa dữ liệu trên Power BI:
 
