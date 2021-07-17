@@ -5,14 +5,14 @@
 ### 1. Phát biểu về dữ liệu:
  - Kho dữ liệu Super Store là một kho dữ liệu thu thập việc bán lẻ trực tuyến của một siêu thị toàn cầu trong vòng 4 năm (từ năm 2011-2015)
  - Thông qua kho dữ liệu người dùng có thể biết được thông tin ngày đặt hàng, giao hàng của một đơn hàng, thông tin đơn hàng đó của khách hàng nào, giá, số lượng, tỉ lệ khuyến mãi, phí vận chuyển, loại khách hàng, …
- - Link gốc: https://www.kaggle.com/jr2ngb/superstore-data 
+ - Link gốc: https://www.kaggle.com/jr2ngb/superstore-data <br />
 **Data Khi chưa Xử Lý**
-![](image/DataChuaXuLy.png)<br>
+![](image/DataChuaXuLy.png)
 **Data sau khi đã xử lý (loại bỏ các cột không xử dung, xử lý dữ liệu NULL)**
 ![](image/DataXuLy.png)
 
 ### 2. Xây dựng data warehouses:
-**Snow Flake Schema:**
+**Snow Flake Schema:**<br />
 ![](image/SnowFlakeSchema.png) 
 **Fact SuperStore**
 | Khóa chính|Tên thuộc tính| Kiểu dữ liệu  |Mô tả Dữ Liệu|Null|
@@ -27,18 +27,20 @@
 |   | Sales | money |Đơn giá ($)|
 |   | Quantity | varchar |Số lượng|
 |   | Quantity | varchar |% khuyến mãi|
+
 **Dim Location**
 | Khóa chính|Tên thuộc tính| Kiểu dữ liệu  |Mô tả Dữ Liệu|Null|
-| --------| -------- | ---------- |---------- |-|
+|---------| ---------- | --------------|-----------|--|
 | PK |ID_LOCATION| int|Mã địa điểm|
 |   | City |varchar  |Tên thành phố|
 |   | Stage |varchar |Tên tiểu bang|
 |   | Country |varchar  |Tên quốc gia|
 |   | Market | varchar |Tên thị trường|
 |   | Region | varchar |Tên vùng lãnh thổ|
+
 **Dim Date**
 | Khóa chính|Tên thuộc tính| Kiểu dữ liệu  |Mô tả Dữ Liệu|Null|
-| --------| -------- | ---------- |---------- |-|
+|---------| ---------- | --------------|-----------|--|
 | PK |ID_DATE| int|Mã ngày|
 |   | Order_date |Datetime|Ngày đặt hàng|
 |   | Ship_date |Datetime |Ngày giao hàng|X|
@@ -48,16 +50,17 @@
 |   | ShipMonth | int |Tháng giao hàng|X|
 |   | ShipYear | int |Năm giao hàng|X|
 |   | ShipQuater | int |Quí giao hàng|X
-**Dim Customer**
+
+**Dim Customer**    
 | Khóa chính|Tên thuộc tính| Kiểu dữ liệu  |Mô tả Dữ Liệu|Null|
-| --------| -------- | ---------- |---------- |-|
+|---------| ---------- | --------------|-----------|--|
 | PK |CUSTOMER_ID| varchar|Mã khách hàng|
 |   | CustomerName |varchar  |Tên khách hàng|
 |   | Segment |varchar |Bộ phận khách hàng ( có 3 bộ phận: Consumer, Home office, Corperate )|
 
 **Dim Product**
 | Khóa chính|Tên thuộc tính| Kiểu dữ liệu  |Mô tả Dữ Liệu|Null|
-| --------| -------- | ---------- |---------- |-|
+|---------| ---------- | --------------|-----------|--|
 | PK |PRODUCT_ID| number|Mã sản phẩm|
 |   | ProductName |int  |Tên sản phẩm|
 | FK| Category_ID |varchar |Mã loại sản phẩm|
@@ -68,6 +71,7 @@
 | PK |Category_ID| varchar|Mã loại sản phẩm|
 |   | Category  |varchar  |Loại sản phẩm|
 |   | Sub-Category |varchar |Tiểu mục của loại sản phẩm|
+
 **Dim ShipMode**
 | Khóa chính|Tên thuộc tính| Kiểu dữ liệu  |Mô tả Dữ Liệu|Null|
 | --------| -------- | ---------- |---------- |-|
