@@ -5,16 +5,16 @@
 ### 1. Phát biểu về dữ liệu:
  - Kho dữ liệu Super Store là một kho dữ liệu thu thập việc bán lẻ trực tuyến của một siêu thị toàn cầu trong vòng 4 năm (từ năm 2011-2015)
  - Thông qua kho dữ liệu người dùng có thể biết được thông tin ngày đặt hàng, giao hàng của một đơn hàng, thông tin đơn hàng đó của khách hàng nào, giá, số lượng, tỉ lệ khuyến mãi, phí vận chuyển, loại khách hàng, …
- - Link gốc: https://www.kaggle.com/jr2ngb/superstore-data <br />
-**Data Khi chưa Xử Lý**
-![](image/DataChuaXuLy.png)
-**Data sau khi đã xử lý (loại bỏ các cột không xử dung, xử lý dữ liệu NULL)**
+ - Link gốc: https://www.kaggle.com/jr2ngb/superstore-data 
+**Data Khi chưa Xử Lý**<br />
+![](image/DataChuaXuLy.png)<br />
+**Data sau khi đã xử lý (loại bỏ các cột không xử dung, xử lý dữ liệu NULL)**<br />
 ![](image/DataXuLy.png)
 
 ### 2. Xây dựng data warehouses:
 **Snow Flake Schema:**<br />
-![](image/SnowFlakeSchema.png) 
-**Fact SuperStore**
+![](image/SnowFlakeSchema.png) <br />
+**Fact SuperStore**<br />
 | Khóa chính|Tên thuộc tính| Kiểu dữ liệu  |Mô tả Dữ Liệu|Null|
 |---------| ---------- | --------------|-----------|--|
 |PK |ID_FACT|varchar|Mã bảng Fact|
