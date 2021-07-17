@@ -7,16 +7,16 @@
  - Thông qua kho dữ liệu người dùng có thể biết được thông tin ngày đặt hàng, giao hàng của một đơn hàng, thông tin đơn hàng đó của khách hàng nào, giá, số lượng, tỉ lệ khuyến mãi, phí vận chuyển, loại khách hàng, …
  - Link gốc: https://www.kaggle.com/jr2ngb/superstore-data
 **Data Khi chưa Xử Lý**
-![](image\DataChuaXuLy.png)
+![](image/DataChuaXuLy.png)
 **Data sau khi đã xử lý (loại bỏ các cột không xử dung, xử lý dữ liệu NULL)**
-![](image\DataXuLy.png)
+![](image/DataXuLy.png)
 
 ### 2. Xây dựng data warehouses:
 **Snow Flake Schema:**
-![](image\SnowFlakeSchema.png)
+![](image/SnowFlakeSchema.png)
 **Fact SuperStore**
 | Khóa chính|Tên thuộc tính| Kiểu dữ liệu  |Mô tả Dữ Liệu|Null|
-| :---------| :----------: | -----------------: |-----------: |--:|
+
 |PK |ID_FACT|varchar|Mã bảng Fact|
 |FK | ID_Location |int  |Mã địa điểm|
 |FK | ID_date |int |Mã ngày|
