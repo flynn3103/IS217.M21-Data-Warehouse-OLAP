@@ -12,7 +12,7 @@
 ![](image/DataXuLy.png)
 
 ### 2. Xây dựng data warehouses:
-**Snow Flake Schema:**<br />
+**Star Schema:**<br />
 ![](image/SnowFlakeSchema.png) <br />
 **Fact SuperStore**<br />
 | Khóa chính|Tên thuộc tính| Kiểu dữ liệu  |Mô tả Dữ Liệu|Null|
